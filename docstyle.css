@@ -1,0 +1,111 @@
+/* Basic styles for the page */
+body,
+html {
+    background-color: #fff;
+    font-family: 'playfair Display', serif;
+    margin: 0px;
+    padding: 0px ;
+}
+
+* {
+    text-decoration: none !important;
+}
+
+.nav {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    background-color: #fff;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav .links a {
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.nav .links .mainlink {
+    color: #e0501b;
+}
+
+.nav .links a:hover {
+    color: #007bff;
+}
+
+.nav .links .button {
+    padding: 8.5px 34px;
+    margin-left: 65px;
+    display: inline-block;
+    padding: 10.5px 36px;
+    font-size: 14px;
+    color: #000;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    text-transform: capitalize;
+    border: 1px solid #e4e6ea;
+    font-family: 'playfair Display', serif;
+}
+
+.nav .links .button:hover {
+    color: #007bff;
+}
+
+
+/* Styles for the doctors list */
+.doctors-list {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.doctor {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.doctor:hover {
+    transform: scale(1.05); /* Hover effect for doctor cards */
+}
+
+.doctor img {
+    width: 100%;
+    height: auto;
+}
+
+.doctor-info {
+    padding: 20px;
+}
+
+.doctor-info h2 {
+    font-size: 26px; /* Increased font size */
+    margin-bottom: 10px;
+}
+
+.doctor-info p {
+    font-size: 20px; /* Increased font size */
+    color: #777;
+    margin: 5px 0;
+}

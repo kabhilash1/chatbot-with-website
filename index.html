@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="about.html">About</a>
+                <a href="doctors.html"">Doctors</a>
+                <button id="book-slot-btn">Book Slot</button>
+            </div>
+        </div>
+    </div>
+
+    <!--landing page-->
+
+    <div class="landing">
+        <div class="landingText" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Bringing the future of <span style="color: #e0501b; font-size: 5vw;"> </span> healthcare</h1>
+            <h3>Healing takes time, and asking for help is a courageous step</h3>
+
+            <div class="btn">
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="landingImage" data-aos="fade-down" data-aos-duration="2000">
+            <img src="images/banner_img.jpg">
+        </div>
+    </div>
+
+    <!--Service-->
+    <div class="about">
+        <div class="aboutText" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Our patients are at the centre <span style="color: #2f8be0; font-size: 3vw;"></span>of everthing we do</h1>
+          
+        </div>
+        <div class="aboutList" data-aos="fade-left" data-aos-duration="1000">
+            <ol>
+                <li>
+                    <span>01</span>
+                    <p>Modern Technology.</p>
+                </li>
+                <li>
+                    <span>02</span>
+                    <p>WorldClass facilities.</p>
+                </li>
+                <li>
+                    <span>03</span>
+                    <p>Experinced Nurse.</p>
+                </li>
+                <li>
+                    <span>04</span>
+                    <p>Hours Support.</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <!--INfo section-->
+    <div class="infoSection">
+        <div class="infoHeader">
+            <h1>We anaylze your health status<br><span style="color: #e0501b;"></span> In order to top our Services.
+            </h1>
+        </div>
+        <div class="infoCards">
+            <div  class="card one" data-aos="fade-up" data-aos-duration="1000">
+                <img src="images/banner_1.svg" class="cardoneImg" data-aos="fade-up" data-aos-duration="1100">
+                <div class="cardbgone"></div>
+                <div class="cardContent">
+                    <h2>Health Services</h2>
+                    <p>Accessible health services for a healthier, happier you.</p>
+                    <a href="">
+                        <div class="cardBtn">
+                            <img src="images/next.png" alt="" class="cardIcon">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div  class="card one" data-aos="fade-up" data-aos-duration="1000">
+                <img src="images/banner_1.svg" class="cardoneImg" data-aos="fade-up" data-aos-duration="1100">
+                <div class="cardbgone"></div>
+                <div class="cardContent">
+                    <h2>Easy apponitment</h2>
+                    <p>Book your mental health appointment today because your well-being matters.</p>
+                    <a href="">
+                        <div class="cardBtn">
+                            <img src="images/next.png" alt="" class="cardIcon">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div  class="card one" data-aos="fade-up" data-aos-duration="1000">
+                <img src="images/banner_1.svg" class="cardoneImg" data-aos="fade-up" data-aos-duration="1100">
+                <div class="cardbgone"></div>
+                <div class="cardContent">
+                    <h2>Qualified Doctors</h2>
+                    <p>Trust our team of qualified doctors to provide the best care for your health</p>
+                    <a href="">
+                        <div class="cardBtn">
+                            <img src="images/next.png" alt="" class="cardIcon">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+
+        <!--banner and footer-->
+        <div class="banner">
+            <div class="bannerText" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Download the Medisen app today <br><span style="font-size: 1.6vw;font-weight: normal;"
+                        class="bannnerInnerText">Stay updated to get all medical needs taken care of !</span></h1>
+                        <a href="#"><img src="images/AndroidPNG.png" ></a>
+                        <a href="#"><img src="images/iosPNG.png" ></a>
+            </div>
+            <div class="bannerImg" data-aos="fade-up" data-aos-duration="1000">
+                <img src="images/app.png" >
+            </div>
+        </div>
+        <div class="footer">
+            <h1>Medisen</h1>
+            <div class="footerlinks">
+                <a href="#" class="mainlink">Home</a>
+                <a href="#">About</a>
+                <a href="#">Doctors</a>
+                <a href="#">Services</a>
+                <a href="#">News</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+    
+<!----------------------------------------------------------------------------------------------------->>
+<div id="booking-popup" class="popup hidden">
+    <div class="popup-content">
+      <span id="close-popup-btn">&times;</span>
+      <div id="booking-container">
+        <h1>Book Your Appointment</h1>
+        <form id="appointment-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Doctor name </label>
+            <input type="Doctor name" id="Doctor name" name="Doctor name" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+          </div>
+          <button type="submit">Book Appointment</button>
+        </form>
+        <div id="message"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/9ba52672-205b-4978-83d2-545aa4fdcea5/webchat/config.js" defer></script>
+    <script src="	https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
